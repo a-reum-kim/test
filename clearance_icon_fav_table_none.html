@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content"width=device-width, initial scale=1.0">
+  <script>
+  var audio = new Audio();
+  audio.src = "Clearance_1.wav";
+</script>
+<script src="https://kit.fontawesome.com/71e5eedd5a.js" crossorigin="anonymous"></script>
+  <style media="screen">
+    .container{
+      display: flex;
+      flex-direction:column;
+      border: 1px solid white;
+    }
+    .header{
+      border:5px solid gray;
+      padding: 10px;
+      margin: 20px;
+      text-align:center;
+    }
+    .content{
+      display: flex;
+    }
+    .numbers{
+      flex-basis: 160px;
+      flex-shrink: 0;
+      padding:10px;
+      margin: 10px;
+      border: 1px solid gray;
+      text-align: center;
+    }
+    table{
+      font-size: 20px;
+      padding-left: 35px;
+      padding-bottom: 20px;
+    }
+    .play{
+      flex-basis: 800px;
+      flex-shrink: 0;
+      padding:10px;
+      padding-top: 20px;
+      margin: 10px;
+      border: 1px solid gray;
+    }
+    .box1{
+      border:1px solid white;
+      padding:10px;
+      float: left;
+      margin-left: 30px;
+    }
+    .box2{
+      border:1px solid white;
+      padding:10px;
+      float: left;
+      margin-left:60px;
+    }
+    .box3{
+      border:1px solid white;
+      float: left;
+      padding:10px;
+      margin-left: 70px;
+    }
+    .aside{
+      border: 1px solid gray;
+      flex-basis: 160px;
+      flex-shrink: 0;
+      padding:10px;
+      margin:10px;
+    }
+    @media (max-width:767px){
+      .content{flex-direction: column;*}
+      .numbers{}
+    }
+    #sample{
+      border:5px solid gray;
+      padding:5px;
+    }
+    #part_task{
+      border:5px solid gray;
+      padding:5px;
+      margin-top: -10px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    #headset{
+      text-align: center;
+      font-size: 200px;
+    }
+    #microphone{
+      text-align: center;
+      font-size: 200px;
+    }
+    #hourglass{
+      font-size: 200px;
+      text-align: center;
+    }
+    #home{
+      padding-top: 40px;
+      text-align: center;
+      font-size: 50px;
+      color: black;
+    }
+    #home:hover{
+      filter: blur(2px);
+    }
+    .hand-point{
+      float: inherit;
+    }
+    #right{
+      font-size: 50px;
+      float: right;
+      padding-top: 40px;
+    }
+    #left{
+      font-size: 50px;
+      float: left;
+      padding-top: 40px;
+    }
+
+  </style>
+</head>
+<body>
+<div class="container">
+  <div class="header"><h2>EPTA Practice Test</h2></div>
+
+  <div class="content">
+    <div class="numbers">
+      <div id="sample">
+        수업 Sample
+      </div>
+          <h3>Clearance</h3>
+                <a href="Clearance_1.html"><b>1</b></a>
+                <a href="Clearance_2.html"><b>2</b></a>
+                <a href="Clearance_3.html"><b>3</b></a>
+                <a href="Clearance_4.html"><b>4</b></a>
+                <a href="Clearance_5.html"><b>5</b></a>
+                <br>
+                <a href="Clearance_6.html"><b>6</b></a>
+                <a href="Clearance_7.html"><b>7</b></a>
+                <a href="Clearance_8.html"><b>8</b></a>
+                <a href="Clearance_9.html"><b>9</b></a>
+                <a href="Clearance_10.html"><b>10</b></a>
+        </div>
+    <div class="play">
+      <div id="part_task">
+        <strong>Part.1  Task.A - Readback / Hearback</strong>
+      </div>
+          <div class="box1">
+            <div id="headset_button">
+              <button onclick="audio.play()">
+                <div id="headset">
+                <i class="fas fa-headphones-alt"></i>
+              </div>
+              </button>
+            </div>
+            <div id="possible">
+              <input
+                type="button"
+                value="Click here to Play"
+                onclick="audio.play()"
+              />
+            </div>
+        </div>
+        <div class="box2">
+          <div id="microphone_button">
+            <button onclick="audio.play()">
+            <div id="microphone">
+              <i class="fas fa-microphone"></i>
+            </div>
+            </div>
+          <div id="record">
+            <input
+              type="button"
+              value="NO VOICE"
+              onclick=""
+            />
+          </div>
+            </div>
+        <div class="box3">
+          <div id="hourglass_button">
+            <button onclick="audio.play()">
+            <div id="hourglass">
+              <i class="fas fa-hourglass-half"></i>
+            </div>
+            </div>
+          <div id="remaining_time">
+            <input
+              type="button"
+              value="Remaining Time 50:00"
+              onclick=""
+            />
+          </div>
+        </div>
+  </div>
+
+        <div class="aside">
+          <div id="home">
+          <a href="http://eptapracticetest.com"><i class="fas fa-home" width="500px"></i></a>
+        </div>
+        <div class="hand-point">
+          <div id="left">
+            <a href=""><i class="far fa-hand-point-left"></i></a>
+          </div>
+          <div id="right">
+            <a href=""><i class="far fa-hand-point-right"></i></a>
+          </div>
+        </div>
+      </div>
+      </div>
+  </div>
+  </div>
+</body>
+</html>
